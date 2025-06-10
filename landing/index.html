@@ -4,35 +4,63 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/styles.css" type="text/css">
+  <!-- Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family= :ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
   <title>AWAYTA</title>
 </head>
 <body>
   <header>
-    <nav>
-      <ul>
-        <li><img src="img/logo.png" alt="Logo de AWAYTA"></li>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">¿Awayta?</a></li>
-        <li><a href="#">¿Cómo funciona?</a></li>
-        <li><a href="#">Beneficios</a></li>
-        <li><a href="#">Contáctanos</a></li>
-        <li><a href="#">Descargar App</a></li>
+    <nav class="navigation">
+        <div class="logo-image">
+          <img src="img/logo.png" alt="Logo de AWAYTA">
+        </div>
+        <div class="sections">
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">¿Awayta?</a></li>
+            <li><a href="#">¿Cómo funciona?</a></li>
+            <li><a href="#">Beneficios</a></li>
+            <li><a href="#">Contáctanos</a></li>
+            <li><a href="#">Descargar app</a></li>
+          </ul>
+        </div>
       </ul>
+    </nav>
   </header>
   <main>
     <!-- Home Section -->
-     <section class="home">
-      <div class="container map">
-        <div class="banner-text">
-          <p id="title">Transforma tu barrio con tecnología y colaboración</p>
-          <button>Empieza ahora</button>
-          <button>App Store</button>
-          <button>Google Play</button>
+    <section class="home">
+      <div class="background-map">
+        <div class="left-side">
+          <div class="start-app">
+            <p class="start-app-title">Transforma tu barrio con tecnología y colaboración</p>
+            <button class="start-app-button">Empieza ahora</button>
+          </div>
+          <div class="download-buttons">
+            <button class="app-store-button">
+              <div class="app-store-button-icon">
+                <img src="img/app-store-icon.png" alt="App Store">
+              </div>
+              <div class="app-store-button-text">
+                <p>App Store</p>
+              </div>
+            </button>
+            <button class="google-play-button">
+              <div class="google-play-button-icon">
+                <img src="img/google-play-icon.png" alt="Google Play">
+              </div>
+              <div class="google-play-button-text">
+                <p>Google Play</p>
+              </div>
+            </button>
+          </div>
         </div>
 
-        <div class="banner-image">
+        <div class="right-side">
           <p>Mapa interactivo</p>
-          <img src="img/phone.png" alt="Mapa interactivo de AWAYTA">
+          <img src="img/app-phone-visualizer.png" alt="Mapa interactivo de AWAYTA">
         </div>
       </div>
     </section>
