@@ -197,3 +197,48 @@ html, body {
   font-size: 25px;
 }
 
+.how-it-works {
+  width: 100%;
+  text-align: center;
+}
+
+.how-it-works-awayta {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.how-it-works-awayta h2 {
+  font-size: 50px;
+  margin: 80px 0;
+}
+
+.report-process {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 100px;
+  justify-items: center;
+  align-items: center;
+}
+
+.report-process .step {
+  font-size: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.report-process .step p {
+  width: 350px;
+}
+
+.report-process .step img {
+  width: 50%;
+  height: auto;
+  margin: 25px 0;
+}
+
+.report-process-cycle img {
+  width: 85%;
+  height: auto;
+}
