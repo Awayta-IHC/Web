@@ -245,6 +245,7 @@ html, body {
 
 .benefits {
   width: 100%;
+  margin-bottom: 150px;
 }
 
 .benefits-awayta {
@@ -345,4 +346,90 @@ html, body {
 .client-recommendation-1 img, .client-recommendation-3 img, .client-recommendation-5 img {
   border: 2.5px solid #FFFFFF;
   border-radius: 50px;
+}
+
+footer .container {
+  background-color: #e6e6e6;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contact-left, .contact-right, .whatsapp, .instagram, .facebook {
+  display: inline-flex;
+  padding: 16px 0;
+}
+
+.networks, .contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+
+.networks .whatsapp {
+  margin-left: 20px;
+}
+
+.networks .instagram {
+  margin-left: 10px;
+}
+
+.networks .facebook {
+  margin-left: -10px;
+}
+
+.contact-left-logo img, .contact-right-logo img{
+  height: 300px;
+  width: auto;
+}
+
+.whatsapp, .instagram , .facebook{
+  align-items: center;
+  gap: 80px;
+}
+
+.whatsapp p, .instagram p, .facebook p {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.instagram img {
+  border-radius: 20px;
+}
+
+.whatsapp img, .facebook img {
+  border-radius: 30px;
+}
+
+.networks img {
+  height: 60px;
+  width: auto;
+  box-shadow: 6px 6px 2px 1px #000000
+}
+
+.contact-right {
+  gap: 70px;
+}
+
+.contact-info {
+  gap: 40px;
+  
+}
+
+.contact-info h3 {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.contact-info img {
+  height: auto;
+  width: 25px;
+}
+
+.contact-info div {
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
 }
