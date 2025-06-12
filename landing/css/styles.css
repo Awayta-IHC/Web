@@ -242,3 +242,107 @@ html, body {
   width: 85%;
   height: auto;
 }
+
+.benefits {
+  width: 100%;
+}
+
+.benefits-awayta {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.benefits-awayta h2, .client-recommendations h2 {
+  font-size: 50px;
+  margin: 80px 0;
+  text-align: center;
+}
+
+.benefits-awayta-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 350px;
+}
+
+.benefit-awaita-list-citizens, .benefits-awayta-list-authorities {
+  line-height: 2.5;
+  font-size: 30px;
+}
+
+.benefit-awaita-list-citizens ul, .benefits-awayta-list-authorities ul {
+  margin-left: 32px;
+}
+
+.benefit-awaita-list-citizens li::marker, .benefits-awayta-list-authorities li::marker {
+  font-size: 40px;
+}
+
+.separator img {
+  width: 100%;
+  height: auto;
+  margin-top: 120px;
+}
+
+.client-recommendations .text {
+  font-size: 28px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.recommendations {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  gap: 50px;
+}
+
+.client-recommendation {
+  width: 340px;
+  height: auto;
+  border-style: solid;
+  border-radius: 6px;
+  display: block;
+  padding: 12px;
+  text-align: left;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.profile p{
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.comment p {
+  font-size: 21px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.profile img {
+  width: 50px;
+  height: auto;
+}
+
+.client-recommendation-1, .client-recommendation-3, .client-recommendation-5 {
+  background-color: #0d1d25;
+  border-color: #000000;
+  color: #FFFFFF;
+}
+
+.client-recommendation-2 img, .client-recommendation-4 img, .client-recommendation-6 img {
+  border: 2.5px solid #000000;
+  border-radius: 50px;
+}
+
+.client-recommendation-1 img, .client-recommendation-3 img, .client-recommendation-5 img {
+  border: 2.5px solid #FFFFFF;
+  border-radius: 50px;
+}
