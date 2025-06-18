@@ -1,274 +1,190 @@
 <!DOCTYPE html>
-<html lang="es-ES">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/styles.css" type="text/css">
-  <!-- Fonts: Inter -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family= :ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-  <title>AWAYTA</title>
-  <link rel="icon" href="img/logo-favicon.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IHC y Tecnologías Móviles</title>
+    <link rel="stylesheet" href="css/inicio.css">
+    <script src="jscript/inicio.js" dref></script>
 </head>
 <body>
-  <header>
-    <nav class="navigation">
-        <div class="logo-image">
-          <img src="img/logo.png" alt="Logo de AWAYTA">
-        </div>
-        <div class="sections">
-          <ul>
-            <li><a href="#home">Inicio</a></li>
-            <li><a href="#about">¿Awayta?</a></li>
-            <li><a href="#how-it-works">¿Cómo funciona?</a></li>
-            <li><a href="#benefits">Beneficios</a></li>
-            <li><a href="#contact">Contáctanos</a></li>
-            <li><a href="#home">Descargar app</a></li>
-          </ul>
-        </div>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <!-- Home Section -->
-    <section class="home" id="home">
-      <div class="background-map">
-        <div class="left-side">
-          <div class="start-app">
-            <p class="start-app-title">Transforma tu barrio con tecnología y colaboración</p>
-            <button class="start-app-button">Empieza ahora</button>
-          </div>
-          <div class="download-buttons">
-            <button class="app-store-button">
-              <div class="app-store-button-icon">
-                <img src="img/app-store-icon.png" alt="App Store">
-              </div>
-              <div class="app-store-button-text">
-                <p>App Store</p>
-              </div>
+    <header>
+       <nav class="navigation">
+            <div class="logo">
+                <a href="#"><img src="imagenes/LogoAwayta.svg" alt="logo-header"></a>
+            </div>
+            <button class="menu-btn" onclick="presionar()">
+                <img src="imagenes/menu.png" alt="menu-btn">
             </button>
-            <button class="google-play-button">
-              <div class="google-play-button-icon">
-                <img src="img/google-play-icon.png" alt="Google Play">
-              </div>
-              <div class="google-play-button-text">
-                <p>Google Play</p>
-              </div>
-            </button>
-          </div>
-        </div>
-
-        <div class="right-side">
-          <p>Mapa interactivo</p>
-          <img src="img/app-phone-visualizer-2.png" alt="Mapa interactivo de AWAYTA">
-        </div>
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="about" id="about">
-      <div class="about-awayta">
-        <div class="about-awayta-text">
-          <h2>¿Qué es Awayta?</h2>
-          <p>Una plataforma colaborativa para reportar incidencias y fortalecer tu seguridad local</p>
-        </div>
-
-        <div class="about-awayta-features">
-          <h2>Características Principales</h2>
-          <div class="container">
-            <div class="feature">
-              <img src="img/report-feature-icon.png" alt="Feature 1">
-              <p>Reportes ciudadanos en tiempo real</p>
-            </div>
-            <div class="feature">
-              <img src="img/ai-feature-icon.png" alt="Feature 2">
-              <p>IA para análisis de incidentes</p>
-            </div>
-            <div class="feature">
-              <img src="img/alert-feature-icon.png" alt="Feature 3">
-              <p>Cercanía a comisarias y alertas</p>
-            </div>
-            <div class="feature">
-              <img src="img/interactive-map-icon.png" alt="Feature 4">
-              <p>Mapa interactivo</p>
-            </div>
-          </div>
-        </div>
-    </section>
-
-    <!-- How it works Section -->
-    <section class="how-it-works" id="how-it-works">
-      <div class="how-it-works-awayta">
-        <h2>¿Cómo funciona?</h2>
-
-        </div>
-        <div class="report-process">
-          <div class="step">
-            <img src="img/detect-step-icon.png" alt="Paso 1">
-            <h3>Detecta</h3>
-            <p>un incidente desde el lugar que te encuentres</p>
-          </div>
-          <div class="step">
-            <img src="img/report-step-icon.png" alt="Paso 2">
-            <h3>Reporta</h3>
-            <p>en tiempo real marcando el lugar en el mapa</p>
-          </div>
-          <div class="step">
-            <img src="img/coordinate-step-icon.png" alt="Paso 3">
-            <h3>Coordina</h3>
-            <p>acciones con los ciudadanos y  autoridades</p>
-          </div>
-        </div>
-        <div class="report-process-cycle">
-          <img src="img/cycle-process.png" alt="ciclo de reporte">
-        </div>
-    </section>
-
-    <!-- Benefits Section -->
-    <section class="benefits" id="benefits">
-      <div class="benefits-awayta">
-        <h2>Beneficios para todos</h2>
-
-        <div class="benefits-awayta-list">
-          <div class="benefit-awaita-list-citizens">
-            <h3>Ciudadanos Urbanos</h3>
-            <ul>
-              <li>Reportes sencillos</li>
-              <li>Botón de emergencia</li>
-              <li>Alertas y zonas seguras</li>
+            <ul class="options-bar">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#definition">¿Awayta?</a></li>
+                <li><a href="#steps">¿Cómo funciona?</a></li>
+                <li><a href="#benefits">Beneficios</a></li>
+                <li><a href="#contact">Contactos</a></li>
+                <li><a href="#inicio">Descargar</a></li>
             </ul>
-          </div>
-          <div class="benefits-awayta-list-authorities">
-            <h3>Autoridades Locales</h3>
-            <ul>
-              <li>Mapas de calor</li>
-              <li>Base de incidentes</li>
-              <li>Supervisión de zonas</li>
-            </ul>
-          </div>
-        </div>
-        <div class="separator">
-          <img src="img/separator.png" alt="Separador">
-        </div>
-      </div>
+        </nav>
+    </header>
 
-      <div class="client-recommendations">
-        <h2>Recomendado por clientes</h2>
-        <p class="text">Descubre como hemos ayudado a nuestros clientes a sentirse mas seguros día a día</p>
-        <div class="recommendations">
-          <div class="client-recommendation client-recommendation-1">
-            <div class="profile">
-              <img src="img/client-profile-1.png" alt="Cliente 1">
-              <p>Roberto M.</p>
+    <main>
+        <!--Sección N1 - Sección Inicio-->
+        <section class = "inicio" id="inicio">
+            <div class="content-text">
+                <h1 class="title">Transforma tu barrio con tecnología y colaboración</h1>
+                <div class="start">
+                    <button class="start-btn">Empieza ahora</button>
+                </div>
+                <div class="download-btns">
+                    <button class="AppS">
+                        <img src="imagenes/AppS.png" alt="AppS">App Store
+                    </button>
+                    <button class="GoogleP">
+                        <img src="imagenes/GoogleP.png" alt="GoogleP">Google Play
+                    </button>
+                </div>
             </div>
-            <div class="comment">
-              <p>Ahora puedo reportar robos y sentirme más segura en mi barrio.</p>
+            <div class="ImgPhone">
+                <img src="imagenes/PhoneIMG.png" alt="" class="Phone-img">
             </div>
-          </div>
-          <div class="client-recommendation client-recommendation-2">
-            <div class="profile">
-              <img src="img/client-profile-2.png" alt="Cliente 2">
-              <p>Karina H.</p>
+        </section>
+
+        <!--Sección N2 -->
+        <section class="section2" id="definition">
+            <div class="definition">
+                <h2>¿Qué es Awayta?</h2> <br>
+                <p>Awayta es una plataforma colaborativa para reportar incidencias y fortalecer tu seguridad local.</p>
             </div>
-            <div class="comment">
-              <p>Nos permite responder más rápido y de forma más organizada.</p>
+            <div class="features">
+                <h2>Características principales</h2> <br>
+                <ul>
+                    <li><img src="imagenes/report.png" alt="Report">Reportes en tiempo real</li>
+                    <li><img src="imagenes/AI.png" alt="AI">IA para análisis de incidentes</li>
+                    <li><img src="imagenes/police.png" alt="Police">Cercanía a comisarías y alertas</li>
+                    <li><img src="imagenes/map.png" alt="Map">Mapas interactivos</li>
+                </ul>
             </div>
-          </div>
-          <div class="client-recommendation client-recommendation-3">
-            <div class="profile">
-              <img src="img/client-profile-3.png" alt="Cliente 3">
-              <p>Erick F.</p>
+        </section>
+
+        <!--Sección N3 -->
+        <section class="section3" id="steps">
+            <div class="steps">
+                <h2>¿Cómo funciona?</h2> <br>
+                <ul>
+                    <li><img src="imagenes/identification.png" alt="Report"><h3>Detecta</h3>un incidente desde el lugar que te encuentres</li>
+                    <li><img src="imagenes/reporting.png" alt="AI"><h3>Reporta</h3>en tiempo real marcando el lugar en el mapa</li>
+                    <li><img src="imagenes/coordinate.png" alt="Police"><h3>Coordina</h3>acciones con los ciudadanos y autoridades</li>
+                </ul>
             </div>
-            <div class="comment">
-              <p>Fácil de usar, útil y realmente conectada con la realidad del barrio.</p>
+            <div class="diagram">
+                <img src="imagenes/Diagram.png" alt="Diagram">
             </div>
-          </div>
-          <div class="client-recommendation client-recommendation-4">
-            <div class="profile">
-              <img src="img/client-profile-4.png" alt="Cliente 4">
-              <p>Veronica D.</p>
+        </section>
+
+        <!--Sección N4 -->
+        <section class="section4" id="benefits">
+            <div class="benefits">
+                <h2>Beneficios para todos</h2> <br>
+                <div class="benefitsC">
+                    <div class="benefits1">
+                        <h3>Ciudadanos urbanos</h3>
+                        <ul>
+                            <li>• Reportes sencillos</li>
+                            <li>• Botón de emergencia</li>
+                            <li>• Alertas y zonas seguras</li>
+                        </ul>
+                    </div>
+                    <div class="benefits2">
+                        <h3>Autoridades locales</h3>
+                        <ul>
+                            <li>• Mapas de calor</li>
+                            <li>• Base de incidencias</li>
+                            <li>• Supervisión de zonas</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="comment">
-              <p>Con Awayta, nuestra comunidad está más unida y alerta.</p>
+            <div class="separation">
+                <img src="imagenes/separation.png" alt="Diagram">
             </div>
-          </div>
-          <div class="client-recommendation client-recommendation-5">
-            <div class="profile">
-              <img src="img/client-profile-5.png" alt="Cliente 5">
-              <p>Miguel L.</p>
+        </section>
+
+        <!--Sección N5-->
+        <section class="section5" id="contact">
+            <div class="reviews">
+                <h2>Recomendado por nuestros clientes</h2> <br>
+                <p>Descubre como hemos ayudado a nuestros clientes a sentirse mas seguros día a día.</p>
+                <ul>
+                    <li class="user1">
+                        <div class="users">
+                            <img src="imagenes/user1.png" alt="user1">
+                            <h3>Roberto M.</h3>
+                        </div>
+                        <br>Ahora puedo reportar robos y sentirme más seguro en mi barrio.
+                    </li>
+                    <li class="user2">
+                        <div class="users">
+                            <img src="imagenes/user2.png" alt="user2">
+                            <h3>Karina H.</h3>
+                        </div>
+                        <br>Nos permite responder más rápido y de forma más organizada.
+                    </li>
+                    <li class="user3">
+                        <div class="users">
+                            <img src="imagenes/user3.png" alt="user3">
+                            <h3>Erick F.</h3>
+                        </div>
+                        <br>Fácil de usar, útil y realmente conectado con la realidad del barrio.
+                    </li>
+                    <li class="user4">
+                        <div class="users">
+                            <img src="imagenes/user4.png" alt="user4">
+                            <h3>Verónica D.</h3>
+                        </div>
+                        <br>Con Awayta, nuestra comunidad está más unida y alerta.
+                    </li>
+                    <li class="user5">
+                        <div class="users">
+                            <img src="imagenes/user5.png" alt="user5">
+                            <h3>Miguel L.</h3>
+                        </div>
+                        <br>La visualización de zonas peligrosas nos ayuda a tomar mejores decisiones.
+                    </li>
+                    <li class="user6">
+                        <div class="users">
+                            <img src="imagenes/user6.png" alt="user6">
+                            <h3>Grecia T.</h3>
+                        </div>
+                        <br>Recibimos alertas vecinales al instante. La app nos agiliza todo.
+                    </li>
+                </ul>
             </div>
-            <div class="comment">
-              <p>La visualización de zonas peligrosas nos ayuda a tomar mejores decisiones.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="left-content">
+            <img src="imagenes/logo-left.png" alt = "logo">
+            <div class="social-media">
+                <ul>
+                    <li class="social1"><h3>Awayta</h3><img src="imagenes/whatsapp-icon.png" alt="whatsapp"></li>
+                    <li class="social2"><h3>nuestras</h3><img src="imagenes/instagram-icon.png" alt="instagram"></li>
+                    <li class="social3"><h3>redes</h3><img src="imagenes/facebook-icon.png" alt="facebook"></li>
+                </ul>
             </div>
-          </div>
-          <div class="client-recommendation client-recommendation-6">
-            <div class="profile">
-              <img src="img/client-profile-6.png" alt="Cliente 6">
-              <p>Grecia T.</p>
-            </div>
-            <div class="comment">
-              <p>Recibimos alertas vecinales al instante. La app nos agiliza todo.</p>
-            </div>
-          </div>
         </div>
-      </div>
-    </section>
-  </main>
-  <footer>
-    <div class="container" id="contact">
-      <div class="contact-left">
-        <div class="contact-left-logo">
-          <img src="img/logo-left.png" alt="">
+        <div class="right-content">
+            <div class="contact-info">
+                <ul>
+                    <li class="contact"><h3>Contáctanos</h3></li>
+                    <li class="contact1"><img src="imagenes/email-icon.png" alt="whatsapp"><h3>contacto@awayta.com</h3></li>
+                    <li class="contact2"><img src="imagenes/adress-icon.png" alt="whatsapp"><h3>Avenida Siempre Viva 123</h3></li>
+                    <li class="contact3"><img src="imagenes/phone-icon.png" alt="whatsapp"><h3>+51 123 456 789</h3></li>
+                </ul>
+            </div>
+            <img src="imagenes/logo-right.png" alt = "logo">
         </div>
-        <div class="networks">
-          <div class="whatsapp">
-            <p>Awayta</p>
-            <a href="https://wa.me/51987654321" target="_blank">
-              <img src="img/whatsapp-icon.png" alt="WhatsApp">
-            </a>
-          </div>
-          <div class="instagram">
-            <p>nuestras</p>
-            <a href="https://www.instagram.com/awayta" target="_blank">
-              <img src="img/instagram-icon.png" alt="Instagram">
-            </a>
-          </div>
-          <div class="facebook">
-            <p>redes</p>
-            <a href="https://www.facebook.com/awayta" target="_blank">
-              <img src="img/facebook-icon.png" alt="Facebook">
-            </a>
-          </div>
-        </div>
-    </div>
-    
-    <div class="contact-right">
-      <div class="contact-info">
-        <h3>Contáctanos</h3>
-        <div>
-          <a href="mailto:contacto@awayta.com">
-            <img src="img/email-icon.png" alt="Email">
-          </a>
-          <p>contacto@awayta.com</p>
-        </div>
-        <div>
-          <a href="https://www.google.com/maps/place/UPC+Campus+Villa/@-12.1978071,-77.0086777,18.75z/data=!4m15!1m8!3m7!1s0x9105b7f5dc3f0907:0x96997013b4869816!2sAv.+Jorge+Ch%C3%A1vez+843,+Santiago+de+Surco+15049!3b1!8m2!3d-12.1466171!4d-77.0120734!16s%2Fg%2F11dzq131gt!3m5!1s0x9105b9e0f449b10f:0x876705c16ffc17d7!8m2!3d-12.1984517!4d-77.0084333!16s%2Fg%2F11c0pqwnwp?entry=ttu&g_ep=EgoyMDI1MDYxNS4wIKXMDSoASAFQAw%3D%3D">
-            <img src="img/adress-icon.png" alt="Adress">
-          </a>
-          <p>Avenida Siempre Viva 123</p>
-        </div>
-        <div>
-          <a href="https://wa.me/51987654321">
-            <img src="img/phone-icon.png" alt="Phone">
-          </a>
-          <p>+51 123 456 789</p>
-        </div>
-      </div>
-      <div class="contact-right-logo">
-        <img src="img/logo-right.png" alt="">
-      </div>
-    </div>
-  </footer>
+    </footer>
+
 </body>
 </html>
