@@ -73,7 +73,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 140px 100px 60px;
-    background: url(imagenes/FondoApp.jpg);
+    background: url(../img/FondoApp.jpg);
     height: 100%;
     color: #000;
     gap: 80px;
