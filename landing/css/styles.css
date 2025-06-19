@@ -21,7 +21,7 @@
     z-index: 1000;
 }
 
-.logo img {
+.logo-icon img {
     max-width: 250px;
     height: auto;
     width: 100%;
@@ -57,23 +57,23 @@
 }
 
 /* SECCIONES GENERAL */
-#definition, #features, #steps, #benefits, #reviews {
+#definition, #features, #how-it-works, #benefits, #reviews {
     scroll-margin-top: 140px;
 }
 
-.definition, .features, .steps, .benefits, .reviews {
+.definition, .features, .how-it-works, .benefits, .reviews {
     font-size: 25px;
     text-align: center;
     margin-top: 60px;
 }
 
 /* SECCIÓN 1: INICIO */
-.inicio {
+.home-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 140px 100px 60px;
-    background: url(../img/FondoApp.jpg);
+    background: url(../img/background-home.jpg);
     height: 100%;
     color: #000;
     gap: 80px;
@@ -111,7 +111,7 @@
     flex-wrap: wrap;
 }
 
-.AppS, .GoogleP {
+.appstore-icon, .googleplay-icon {
     display: flex;
     align-items: center;
     background-color: #fff;
@@ -122,16 +122,16 @@
     cursor: pointer;
 }
 
-.AppS:hover, .GoogleP:hover {
+.appstore-icon:hover, .googleplay-icon:hover {
     transform: scale(1.05);
 }
 
-.AppS img, .GoogleP img {
+.appstore-icon img, .googleplay-icon img {
     height: 20px;
     margin-right: 8px;
 }
 
-.ImgPhone {
+.phone-img {
     margin-right: 80px;
     display: flex;
     justify-content: center;
@@ -139,7 +139,7 @@
     order: 2;
 }
 
-.ImgPhone img {
+.phone-img img {
   min-width: 200px;
   max-width: 300px;
   width: 100%;
@@ -148,7 +148,7 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-/* SECCION N2: FEATURES */
+/* SECCION N2: DEFINITION AND FEATURES */
 .features ul {
     display: grid;
     width: 70%;
@@ -168,8 +168,8 @@
     max-width: 80px;
 }
 
-/* SECCION N3: STEPS */
-.steps ul {
+/* SECCION N3: HOW IT WORKS */
+.how-it-works ul {
     display: grid;
     width: 80%;
     margin: 0 auto;
@@ -178,14 +178,14 @@
     grid-gap: 4rem 6rem;
 }
 
-.steps li {
+.how-it-works li {
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 300px;
 }
 
-.steps img {
+.how-it-works img {
     max-width: 90px;
 }
 
@@ -199,7 +199,7 @@
 }
 
 /* SECCION N4: BENEFITS */
-.benefitsC {
+.benefits-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     gap: 3rem;
@@ -230,10 +230,10 @@
 .reviews ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    width: 60%;
     margin: 0 auto;
-    width: 55%;
-    grid-gap: 2rem 4.5rem;
-    justify-content: center;
+    padding: 0 20px;
+    gap: 2rem;
 }
 
 .reviews li {
@@ -256,17 +256,17 @@
     height: auto;
 }
 
-.user1, .user3, .user5 {
+.user-1, .user-3, .user-5 {
     background-color: #0d1d25;
     color: #FFFFFF;
 }
 
-.user2 img, .user4 img, .user6 img {
+.user-2 img, .user-4 img, .user-6 img {
     border: 2.5px solid #000000;
     border-radius: 30px;
 }
 
-.user1 img, .user3 img, .user5 img {
+.user-1 img, .user-3 img, .user-5 img {
     border: 2.5px solid #FFFFFF;
     border-radius: 30px;
 }
@@ -351,7 +351,7 @@ footer {
         display: flex;
     }
 
-    .inicio {
+    .home-section {
         margin-top: 80px;
         flex-direction: column;
         height: auto;
@@ -367,7 +367,7 @@ footer {
         align-items: center;
     }
 
-    .ImgPhone {
+    .phone-img {
         width: 100%;
         max-width: 300px;
         margin: 0px auto;
@@ -377,7 +377,7 @@ footer {
         justify-content: center;
     }
 
-    .definition, .features, .steps, .benefits, .reviews {
+    .definition, .features, .how-it-works, .benefits, .reviews {
         font-size: 22px;
         align-items: center;
     }
