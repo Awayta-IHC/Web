@@ -275,7 +275,7 @@
     scroll-margin-top: 140px;
 }
 
-.definition, .features, .how-it-works, .benefits, .reviews, .explore {
+.definition, .features, .how-it-works, .benefits, .reviews, .explore, .message {
     font-size: 25px;
     text-align: center;
     margin-top: 60px;
@@ -408,6 +408,10 @@
 }
 
 /* SECCION N3: HOW IT WORKS */
+.how-it-works {
+    margin-bottom: 110px;
+}
+
 .how-it-works ul {
     display: grid;
     width: 80%;
@@ -428,16 +432,71 @@
     max-width: 90px;
 }
 
-.diagram {
+/* SECCIÓN N4: MENSSAGE */
+.message-section {
+    padding: 30px 60px;
+    background-color: #f0f0f0;
     display: flex;
     justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.diagram img {
-    max-width: 80%;
+.message-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 80px;
+    max-width: 1800px;
+    width: 100%;
 }
 
-/* SECCIÓN N4: BENEFICIOS */
+.message-image {
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    flex: 1 1 300px;
+}
+
+.message-text {
+    flex: 1 1 500px;
+    max-width: 900px;
+    color: #222;
+}
+
+.message-text h2 {
+    font-size: clamp(36px, 4vw, 60px);
+    font-weight: 700;
+    margin-bottom: 24px;
+    line-height: 1.2;
+}
+
+.message-text p {
+    font-size: 1em;
+    color: #444;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.message-btn {
+    background-color: #000;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 24px;
+    border-radius: 4px;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.message-btn:hover {
+    background-color: #333;
+}
+
+/* SECCIÓN N4: BENEFITS */
 .benefits-section {
     padding: 80px 20px;
     background-color: #ffffff;
@@ -495,8 +554,7 @@
     margin-bottom: 15px;
 }
 
-.benefits-left ul,
-.benefits-right ul {
+.benefits-left ul, .benefits-right ul {
     list-style: none;
     padding: 0;
     text-align: left;
@@ -504,8 +562,7 @@
     max-width: 90%;
 }
 
-.benefits-left li,
-.benefits-right li {
+.benefits-left li, .benefits-right li {
     margin-bottom: 12px;
     font-size: 1em;
     color: #444;
@@ -769,6 +826,21 @@ footer {
         text-align: left;
         margin: 0 auto;
         max-width: 90%;
+    }
+}
+
+@media (max-width: 900px) {
+    .message-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .message-text {
+        max-width: 100%;
+    }
+
+    .message-image {
+        max-width: 200px;
     }
 }
 
