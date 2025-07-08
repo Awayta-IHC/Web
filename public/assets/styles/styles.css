@@ -141,13 +141,13 @@
 }
 
 .phone-img img {
-  min-width: 200px;
-  max-width: 300px;
-  width: 100%;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  margin-bottom: 30px;
+    min-width: 200px;
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
 }
 
 .phone-img .dots {
@@ -170,7 +170,7 @@
 }
 
 .dot.active{
-  background:#333;
+    background:#333;
 }
 
 /* SECCION N2: DEFINITION AND FEATURES */
