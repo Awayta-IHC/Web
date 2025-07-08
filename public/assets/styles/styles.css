@@ -61,7 +61,7 @@
     scroll-margin-top: 140px;
 }
 
-.definition, .features, .how-it-works, .benefits, .reviews {
+.definition, .features, .how-it-works, .benefits, .reviews, .explore {
     font-size: 25px;
     text-align: center;
     margin-top: 60px;
@@ -223,85 +223,267 @@
     max-width: 80%;
 }
 
-/* SECCION N4: BENEFITS */
-.benefits-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    gap: 3rem;
-    margin: 0 auto;
-    width: 80%;
-    justify-items: center;
-    text-align: left;
+/* SECCIÓN N4: BENEFICIOS */
+.benefits-section {
+    padding: 80px 20px;
+    background-color: #ffffff;
+    text-align: center;
 }
 
-.benefits li {
-    margin-top: 15px;
+.benefits h2 {
+    font-size: 2.2em;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.benefits-intro {
+    max-width: 1600px;
+    margin: 0 auto 40px;
+    font-size: 1.1em;
+    color: #555;
+}
+
+.benefits-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 100px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    position: relative;
+}
+
+.benefits-left,
+.benefits-right {
+    flex: 1 1 450px;
+    min-width: 360px;
+    text-align: center;
+}
+
+.benefits-divider {
+    width: 2px;
+    background-color: #ddd;
+    height: auto;
+    min-height: 300px;
+    align-self: stretch;
+}
+
+.benefits h3 {
+    font-size: 1.3em;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.benefit-desc {
+    font-size: 0.95em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.benefits-left ul,
+.benefits-right ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+.benefits-left li,
+.benefits-right li {
+    margin-bottom: 12px;
+    font-size: 1em;
+    color: #444;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .separation {
-    margin-top: 100px;
     width: 100%;
-    display: flex;
-    justify-content: center;
     overflow: hidden;
+    margin-top: 80px;
 }
 
 .separation img {
     width: 100%;
     height: auto;
+    max-height: none;
+    object-fit: cover;
+    object-position: center;
+    display: block;
 }
 
-/* SECCION N5: REVIEWS */
+/* SECCIÓN N5: REVIEWS */
+.reviews-section {
+    padding: 60px 20px 90px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.reviews-section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.reviews-section > p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 60px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .reviews ul {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    width: 60%;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem 3.5rem;
+    padding: 30px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
-    gap: 2rem;
 }
 
 .reviews li {
-    text-align: left;
-    margin-top: 30px;
-    width: 340px;
-    border-style: solid;
-    border-radius: 6px;
+    border-radius: 10px;
     padding: 20px;
+    text-align: left;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.reviews li:hover {
+    transform: translateY(-5px);
 }
 
 .users {
     display: flex;
-    align-items: center;;
-    gap: 10px;
+    align-items: center;
+    gap: 15px;
 }
 
 .users img {
-    max-width: 50px;
-    height: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2.5px solid #000;
+}
+
+.reviews li p {
+    margin: 0;
+    font-size: 1em;
+    line-height: 1.5;
 }
 
 .user-1, .user-3, .user-5 {
     background-color: #0d1d25;
-    color: #FFFFFF;
-}
-
-.user-2 img, .user-4 img, .user-6 img {
-    border: 2.5px solid #000000;
-    border-radius: 30px;
+    color: #fff;
 }
 
 .user-1 img, .user-3 img, .user-5 img {
-    border: 2.5px solid #FFFFFF;
-    border-radius: 30px;
+    border-color: #fff;
+}
+
+.user-2, .user-4, .user-6 {
+    background-color: #fdfdfd;
+    color: #000;
+}
+
+.user-2 img, .user-4 img, .user-6 img {
+    border-color: #000;
+}
+
+/* SECCIÓN N6: EXPLORAR */
+.explore-section {
+    padding: 60px 20px 90px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.explore-header h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.explore-header p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 20px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.explore-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 3rem 2.5rem;
+    padding: 30px;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.explore-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.explore-card:hover {
+    transform: translateY(-5px);
+}
+
+.explore-card img {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+    border-radius: 10px;
+    filter: brightness(0.75);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.explore-box {
+    position: relative;
+    top: -40px;
+    background-color: #fff;
+    padding: 20px;
+    width: 85%;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    text-align: left;
+    z-index: 2;
+}
+
+.explore-box h3 {
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.read-more {
+    color: #007BFF;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 0.95em;
+}
+
+.read-more:hover {
+    text-decoration: underline;
 }
 
 /* FOOTER */
 footer {
-    margin-top: 80px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    background-color: #f5f5f5;
+    background-color: #dedede;
 }
 
 .left-content, .right-content {
@@ -351,6 +533,32 @@ footer {
 }
 
 /* RESPONSIVE */
+@media (max-width: 1180px) {
+    .benefits-group {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .benefits-divider {
+        display: none;
+    }
+
+    .benefits-left,
+    .benefits-right {
+        text-align: center;
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .benefits-left ul,
+    .benefits-right ul {
+        text-align: left;
+        margin: 0 auto;
+        max-width: 90%;
+    }
+}
+
 @media (max-width: 855px) {
     .navigation {
         top: 0px;
