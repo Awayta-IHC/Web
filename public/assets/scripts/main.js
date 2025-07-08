@@ -39,4 +39,27 @@ document.addEventListener('DOMContentLoaded', () => {
   start();   // rotación automática
 });
 
+/* ========= Modal Login / Signup ========= */
+const openAuth  = document.getElementById('open-auth');
+const overlay   = document.getElementById('auth-overlay');
+const closeAuth = document.querySelector('.close-auth');
+
+openAuth.addEventListener('click', e => {
+    e.preventDefault();
+    overlay.classList.add('show');
+});
+closeAuth.addEventListener('click', () => overlay.classList.remove('show'));
+overlay.addEventListener('click', e => {
+    if (e.target === overlay) overlay.classList.remove('show');
+});
+
+/* ========= Slider SignIn / SignUp ========= */
+const signUpButton = document.getElementById('signUp');
+const signInButton = document.getElementById('signIn');
+const container    = document.getElementById('container');
+
+signUpButton.addEventListener('click', () => container.classList.add('right-panel-active'));
+signInButton.addEventListener('click', () => container.classList.remove('right-panel-active'));
+
+
 
