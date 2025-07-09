@@ -14,7 +14,7 @@
     justify-content: space-between;
     align-items: center;
     height: 80px;
-    background-color: #eee;
+    background-color: #c2c1c1;
     padding: 0px 40px;
     position: fixed;
     width: 100%;
@@ -271,14 +271,14 @@
 }
 
 /* SECCIONES GENERAL */
-#definition, #features, #how-it-works, #benefits, #reviews {
+#definition, #features, #how-it-works, #benefits, #reviews, #explore, #message {
     scroll-margin-top: 140px;
 }
 
 .definition, .features, .how-it-works, .benefits, .reviews, .explore, .message {
     font-size: 25px;
     text-align: center;
-    margin-top: 60px;
+    margin: 60px 0;
 }
 
 /* SECCIÓN 1: INICIO */
@@ -388,9 +388,13 @@
 }
 
 /* SECCION N2: DEFINITION AND FEATURES */
+.definition {
+    padding: 0 80px;
+}
+
 .features ul {
     display: grid;
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     grid-gap: 4rem 17rem;
@@ -408,7 +412,7 @@
 }
 
 /* SECCION N3: HOW IT WORKS */
-.how-it-works {
+.how-it-works-section {
     margin-bottom: 110px;
 }
 
@@ -434,12 +438,11 @@
 
 /* SECCIÓN N4: MENSSAGE */
 .message-section {
-    padding: 30px 60px;
+    padding: 20px 80px;
     background-color: #f0f0f0;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .message-content {
@@ -453,7 +456,7 @@
 }
 
 .message-image {
-    max-width: 600px;
+    max-width: 500px;
     width: 100%;
     height: auto;
     object-fit: contain;
@@ -498,7 +501,7 @@
 
 /* SECCIÓN N4: BENEFITS */
 .benefits-section {
-    padding: 80px 20px;
+    padding: 40px 80px;
     background-color: #ffffff;
     text-align: center;
 }
@@ -521,15 +524,15 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
-    gap: 100px;
+    gap: 40px;
     max-width: 1400px;
     margin: 0 auto;
-    padding: 40px 20px;
+    padding: 20px;
     position: relative;
 }
 
 .benefits-left, .benefits-right {
-    flex: 1 1 450px;
+    flex: 1 1 350px;
     min-width: 360px;
     text-align: center;
 }
@@ -551,14 +554,14 @@
 .benefit-desc {
     font-size: 0.95em;
     color: #666;
-    margin-bottom: 15px;
+    margin: 30px 0;
 }
 
 .benefits-left ul, .benefits-right ul {
     list-style: none;
     padding: 0;
     text-align: left;
-    margin: 0 auto;
+    margin: 0 80px;
     max-width: 90%;
 }
 
@@ -572,23 +575,18 @@
 }
 
 .separation {
-    width: 100%;
-    overflow: hidden;
-    margin-top: 80px;
-}
-
-.separation img {
-    width: 100%;
-    height: auto;
-    max-height: none;
-    object-fit: cover;
-    object-position: center;
+    width: 100vw;
+    height: 400px;
+    background-image: url(../images/separation-img.png);
+    background-size: cover;
+    background-position: center;
     display: block;
+    overflow: hidden;
 }
 
 /* SECCIÓN N5: REVIEWS */
 .reviews-section {
-    padding: 60px 20px 90px;
+    padding: 60px 80px;
     background-color: #f0f0f0;
     text-align: center;
 }
@@ -671,7 +669,7 @@
 
 /* SECCIÓN N6: EXPLORAR */
 .explore-section {
-    padding: 60px 20px 90px;
+    padding: 60px 80px;
     background-color: #f9f9f9;
     text-align: center;
 }
@@ -684,7 +682,7 @@
 .explore-header p {
     font-size: 1.1em;
     color: #555;
-    margin-bottom: 20px;
+    margin: 30px 0;
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
@@ -695,7 +693,7 @@
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 3rem 2.5rem;
     padding: 30px;
-    max-width: 1600px;
+    max-width: 1500px;
     margin: 0 auto;
 }
 
@@ -803,48 +801,7 @@ footer {
 }
 
 /* RESPONSIVE */
-@media (max-width: 1180px) {
-    .benefits-group {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .benefits-divider {
-        display: none;
-    }
-
-    .benefits-left,
-    .benefits-right {
-        text-align: center;
-        width: 100%;
-        max-width: 600px;
-    }
-
-    .benefits-left ul,
-    .benefits-right ul {
-        text-align: left;
-        margin: 0 auto;
-        max-width: 90%;
-    }
-}
-
-@media (max-width: 900px) {
-    .message-content {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .message-text {
-        max-width: 100%;
-    }
-
-    .message-image {
-        max-width: 200px;
-    }
-}
-
-@media (max-width: 855px) {
+@media (max-width: 1300px) {
     .navigation {
         top: 0px;
     }
@@ -903,7 +860,35 @@ footer {
     .features ul {
         grid-template-columns: 1fr;
     }
+
+    .benefits-group {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .benefits-divider {
+        display: none;
+    }
+
+    .benefits-left, .benefits-right {
+        text-align: center;
+        width: 100%;
+        max-width: 600px;
+    }
 }
+
+@media (max-width: 900px) {
+    .message-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .message-text {
+        max-width: 100%;
+    }
+}
+
 
 @media (max-width: 560px) {
     .auth-overlay input {
