@@ -19,5 +19,6 @@
 # "Transforma tu barrio con tecnología y colaboración"
 
 Autores:
-- David Joel
+- Anyelo Alejos
+- David Morales
 - Rodrigo Torres
